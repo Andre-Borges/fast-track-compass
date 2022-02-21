@@ -1,4 +1,4 @@
-# Formulário Cadastro Alura
+# Petshop Alura
 
 ## Configuração
 
@@ -10,16 +10,16 @@
    $ yarn install
    ```
 
-2. Rode o projeto:
-
-   ```sh
-   $ yarn start
-   ```
-
-3. Inicie o servidor:
+2. Inicie o servidor:
 
    ```sh
    $ yarn server
+   ```
+
+3. Rode o projeto:
+
+   ```sh
+   $ yarn start
    ```
 
 4. Abra [http://localhost:3000](http://localhost:3000) em seu navegador.
