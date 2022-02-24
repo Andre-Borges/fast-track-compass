@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  
+  grid-template-areas: 
+  'search-bar search-bar search-bar search-bar'
+  'video-player video-player video-player video-list'
+  'video-player video-player video-player video-list'
+  'video-player video-player video-player video-list';
+  
+}
+
+.search-bar {
+  grid-area: search-bar;
+  background: red;
+}
+
+.video-player {
+  grid-area: video-player;
+  background: #F0E68C;
+}
+
+.video-list {
+  grid-area: video-list;
+  background: #FFFACD;
+  padding: 15px;
+}
+
+.video-titulo {
+  font-weight: 400;
+  font-weight: 600;
+  color: #4682B4;
+  padding: 10px;
+}
+
+.video-descricao {
+  padding: 10px;
+  color: #0000CD;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
