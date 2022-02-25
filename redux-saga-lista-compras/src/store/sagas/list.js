@@ -8,7 +8,11 @@ const genericImg =
 export function* getImageRequest(action) {
   try {
     const img = yield call(services.getImages, action.product.product);
-    yield put(ListActions.getImageSuccess(action.product, img));
+    if (img.toString().includes("Error")) {
+      yield put(ListActions.getImageFailure(action.product, genericImg));
+    } else {
+      yield put(ListActions.getImageSuccess(action.product, img));
+    }
   } catch (err) {
     console.log(err);
     yield put(ListActions.getImageFailure(action.product, genericImg));
