@@ -1,0 +1,3 @@
+yarn add redux
+yarn add react-redux
+yarn add redux-saga
