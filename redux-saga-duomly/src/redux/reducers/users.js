@@ -8,7 +8,7 @@ const initialState = {
 
 export default function users(state = initialState, action) {
   switch (action.type) {
-    case type.GET_USERS_REQUESTED:
+    case type.GET_USERS:
       return {
         ...state,
         loading: true,
